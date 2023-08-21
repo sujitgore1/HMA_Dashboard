@@ -1,0 +1,17 @@
+<div class="form p-4 rounded-3">
+    <div class="content">
+        <div class="msg">
+            <h4>Welcome Back!</h4>
+        </div><br>
+        <form #frm="ngForm" (ngSubmit)="onSubmit(frm)">
+            <input type="email" name="email" class="form-control" placeholder="Email Id" #email="ngModel" ngModel><br>
+            <input type="password" name="pass" class="form-control" placeholder="Password" #pass="ngModel" ngModel>
+            <div class="tab" class="text-end"><br>
+                <a href="#"><i>Forgot Password?</i></a>
+            </div><br>
+            <div class="loginbtn text-center">
+                <button type="submit" class="btn btn-primary px-3">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
